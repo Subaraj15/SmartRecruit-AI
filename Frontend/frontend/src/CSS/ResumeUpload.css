@@ -1,0 +1,342 @@
+
+/* ==========================================
+   SMARTRECRUIT AI - RESUME UPLOAD
+========================================== */
+
+.ru-page {
+  min-height: 100vh;
+  background: #f5f6fc;
+  padding-bottom: 40px;
+}
+
+.ru-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 20px 7%;
+  background: #ffffff;
+  border-bottom: 1px solid #ececf4;
+}
+
+.ru-navbar h2 {
+  margin: 0;
+  font-size: 23px;
+  color: #202447;
+}
+
+.ru-highlight {
+  color: #7055ee;
+}
+
+.ru-nav-button {
+  background: #f0edff;
+  color: #6245e8;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ru-content {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.ru-card {
+  background: white;
+  border: 1px solid #ececf4;
+  border-radius: 22px;
+  padding: 38px;
+  box-shadow: 0 8px 30px rgba(40, 40, 80, 0.06);
+}
+
+.ru-heading {
+  color: #202447;
+  font-size: 30px;
+  margin: 0 0 12px;
+}
+
+.ru-subtitle {
+  color: #777e96;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.ru-upload-area {
+  border: 2px dashed #c9c2ff;
+  background: #faf9ff;
+  border-radius: 18px;
+  padding: 35px 24px;
+  text-align: center;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.ru-upload-area:hover {
+  border-color: #7355ee;
+  background: #f5f2ff;
+}
+
+.ru-upload-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  background: #eeebff;
+  color: #7055ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  margin: 0 auto 18px;
+}
+
+.ru-upload-area h3 {
+  color: #202447;
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.ru-upload-area p {
+  color: #777e96;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ru-file-input {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  margin: 20px auto 0;
+  padding: 12px;
+  border: 1px solid #e3e4ee;
+  background: white;
+  border-radius: 10px;
+  font-size: 13px;
+  color: #555;
+}
+
+.ru-selected-file {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f0edff;
+  border: 1px solid #e4deff;
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 20px;
+  color: #5140b0;
+  overflow-wrap: anywhere;
+}
+
+.ru-file-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.ru-file-name {
+  font-weight: 600;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.ru-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.ru-info-item {
+  flex: 1 1 150px;
+  background: #f8f7ff;
+  border: 1px solid #efedff;
+  border-radius: 12px;
+  padding: 14px;
+  color: #656b80;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.ru-info-item strong {
+  display: block;
+  color: #202447;
+  margin-bottom: 5px;
+}
+
+.ru-submit-button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #7355ee, #5969ed);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ru-submit-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(100, 80, 230, 0.2);
+}
+
+.ru-submit-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.ru-message {
+  padding: 13px 15px;
+  border-radius: 10px;
+  margin-top: 18px;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.ru-message-success {
+  color: #168348;
+  background: #ecfdf3;
+  border: 1px solid #c9f2d9;
+}
+
+.ru-message-error {
+  color: #c03939;
+  background: #fff1f1;
+  border: 1px solid #ffd6d6;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 768px) {
+  .ru-navbar {
+    padding: 17px 20px;
+  }
+
+  .ru-content {
+    padding: 30px 20px;
+  }
+
+  .ru-card {
+    padding: 28px;
+  }
+
+  .ru-heading {
+    font-size: 27px;
+  }
+
+  .ru-upload-area {
+    padding: 28px 20px;
+  }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+  .ru-navbar {
+    padding: 14px 16px;
+    flex-wrap: wrap;
+  }
+
+  .ru-navbar h2 {
+    font-size: 20px;
+  }
+
+  .ru-nav-button {
+    padding: 10px 13px;
+    font-size: 13px;
+  }
+
+  .ru-content {
+    padding: 22px 14px;
+  }
+
+  .ru-card {
+    padding: 22px 17px;
+    border-radius: 16px;
+  }
+
+  .ru-heading {
+    font-size: 24px;
+  }
+
+  .ru-subtitle {
+    font-size: 14px;
+    margin-bottom: 22px;
+  }
+
+  .ru-upload-area {
+    padding: 25px 15px;
+    border-radius: 14px;
+  }
+
+  .ru-upload-icon {
+    width: 58px;
+    height: 58px;
+    font-size: 26px;
+  }
+
+  .ru-upload-area h3 {
+    font-size: 16px;
+  }
+
+  .ru-upload-area p {
+    font-size: 13px;
+  }
+
+  .ru-file-input {
+    max-width: 100%;
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .ru-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ru-info-item {
+    flex-basis: auto;
+  }
+
+  .ru-submit-button {
+    padding: 15px;
+    font-size: 15px;
+  }
+}
+
+/* ==========================================
+   SMALL PHONES
+========================================== */
+
+@media (max-width: 350px) {
+  .ru-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ru-nav-button {
+    width: 100%;
+  }
+
+  .ru-content {
+    padding: 18px 11px;
+  }
+
+  .ru-card {
+    padding: 18px 14px;
+  }
+
+  .ru-heading {
+    font-size: 22px;
+  }
+}

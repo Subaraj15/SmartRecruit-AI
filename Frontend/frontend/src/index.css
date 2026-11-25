@@ -1,0 +1,172 @@
+
+/* =========================================
+   SMARTRECRUIT AI - GLOBAL CSS
+========================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  max-width: 100%;
+}
+
+/* =========================================
+   GENERAL CONTAINERS
+========================================= */
+
+.page,
+.dashboard,
+.page-content,
+.dashboard-content {
+  width: 100%;
+  max-width: 100%;
+}
+
+.job-grid,
+.stats,
+.dashboard-actions {
+  min-width: 0;
+}
+
+/* =========================================
+   TABLET RESPONSIVENESS
+========================================= */
+
+@media (max-width: 1024px) {
+
+  .page-content,
+  .dashboard-content {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .job-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 768px) {
+
+  .page-content,
+  .dashboard-content {
+    padding: 20px 16px;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 15px 16px;
+  }
+
+  .navbar > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .job-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  button {
+    min-height: 42px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    overflow-wrap: anywhere;
+  }
+
+}
+
+/* =========================================
+   SMALL MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 480px) {
+
+  .page-content,
+  .dashboard-content {
+    padding: 16px 12px;
+  }
+
+  .navbar {
+    padding: 12px;
+  }
+
+  .navbar h2 {
+    font-size: 20px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .job-grid {
+    grid-template-columns: 1fr;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+  }
+
+}

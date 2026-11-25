@@ -1,0 +1,342 @@
+
+
+/* ==============================
+   ADMIN DASHBOARD LAYOUT
+============================== */
+
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background: #f4f6fb;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* ==============================
+   SIDEBAR
+============================== */
+
+.admin-layout > .admin-sidebar {
+  position: relative;
+  top: auto;
+  left: auto;
+  flex: 0 0 250px;
+  width: 250px;
+  min-width: 250px;
+  height: 100vh;
+  background: #172554;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 15px;
+  box-sizing: border-box;
+  z-index: 10;
+  overflow-y: auto;
+}
+
+.admin-brand {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.admin-brand h2 {
+  margin-bottom: 8px;
+}
+
+.admin-brand p {
+  color: #cbd5e1;
+  margin: 0;
+}
+
+.admin-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  text-align: left;
+  font-size: 15px;
+}
+
+.admin-menu-item:hover,
+.admin-menu-item.active {
+  background: #1d4ed8;
+}
+
+.admin-logout {
+  margin-top: auto;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #dc2626;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.admin-logout:hover {
+  background: #b91c1c;
+}
+
+/* ==============================
+   MAIN CONTENT
+============================== */
+
+.admin-main {
+  flex: 1 1 0;
+  min-width: 0;
+  width: 0;
+  padding: 35px;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+.admin-header {
+  margin-bottom: 30px;
+}
+
+.admin-header h1 {
+  margin: 0 0 8px;
+  color: #172554;
+  overflow-wrap: break-word;
+}
+
+.admin-header p {
+  color: #64748b;
+}
+
+/* ==============================
+   STATISTICS
+============================== */
+
+.admin-stats-grid {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(min(190px, 100%), 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.admin-stat-card {
+  min-width: 0;
+  background: white;
+  border-radius: 14px;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.admin-stat-icon {
+  font-size: 32px;
+}
+
+.admin-stat-card p {
+  color: #64748b;
+  margin: 0 0 8px;
+}
+
+.admin-stat-card h2 {
+  color: #172554;
+  margin: 0;
+  font-size: 28px;
+}
+
+/* ==============================
+   WELCOME SECTION
+============================== */
+
+.admin-welcome {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.admin-welcome h2 {
+  color: #172554;
+}
+
+.admin-welcome p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* ==============================
+   QUICK ACTIONS
+============================== */
+
+.admin-quick-actions {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.admin-quick-actions h2 {
+  color: #172554;
+  margin-top: 0;
+}
+
+.admin-action-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr));
+  gap: 15px;
+}
+
+.admin-action-grid button {
+  width: 100%;
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  background: #eff6ff;
+  color: #172554;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.admin-action-grid button:hover {
+  background: #dbeafe;
+}
+
+/* ==============================
+   MESSAGES
+============================== */
+
+.admin-message {
+  padding: 20px;
+  color: #475569;
+}
+
+.admin-error {
+  padding: 20px;
+  color: #dc2626;
+}
+
+/* ==============================
+   TABLET
+============================== */
+
+@media (max-width: 900px) {
+  .admin-layout > .admin-sidebar {
+    flex: 0 0 220px;
+    width: 220px;
+    min-width: 220px;
+    padding: 20px 12px;
+  }
+
+  .admin-main {
+    padding: 25px;
+  }
+
+  .admin-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 768px) {
+  .admin-layout {
+    flex-direction: column;
+  }
+
+  .admin-layout > .admin-sidebar {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    flex: none;
+    height: auto;
+    min-height: auto;
+    padding: 18px 15px;
+  }
+
+  .admin-brand {
+    margin-bottom: 20px;
+  }
+
+  .admin-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .admin-menu-item {
+    flex: 1 1 130px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .admin-logout {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .admin-main {
+    width: 100%;
+    min-width: 0;
+    padding: 20px;
+    overflow-x: auto;
+  }
+
+  .admin-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-action-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==============================
+   SMALL MOBILE
+============================== */
+
+@media (max-width: 480px) {
+  .admin-main {
+    padding: 15px;
+  }
+
+  .admin-layout > .admin-sidebar {
+    padding: 15px 10px;
+  }
+
+  .admin-header h1 {
+    font-size: 24px;
+  }
+
+  .admin-stat-card {
+    padding: 18px;
+  }
+
+  .admin-welcome,
+  .admin-quick-actions {
+    padding: 18px;
+  }
+
+  .admin-menu-item {
+    flex: 1 1 100%;
+  }
+}

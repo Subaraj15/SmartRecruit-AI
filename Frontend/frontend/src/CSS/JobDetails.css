@@ -1,0 +1,585 @@
+
+/* =========================================
+   JOB DETAILS - COMPLETE STYLING
+========================================= */
+
+.jd-page {
+  min-height: 100vh;
+  background: #f5f6fc;
+  color: #202447;
+  padding-bottom: 40px;
+}
+
+/* NAVBAR */
+
+.jd-navbar {
+  height: 85px;
+  padding: 0 7%;
+  background: #ffffff;
+  border-bottom: 1px solid #ececf5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.jd-logo {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 800;
+  color: #202447;
+}
+
+.jd-logo span {
+  color: #7055ee;
+}
+
+.jd-back-button {
+  background: #f0edff;
+  color: #6349e9;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.jd-back-button:hover {
+  background: #e5deff;
+}
+
+/* MAIN CONTENT */
+
+.jd-main {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 35px 25px;
+}
+
+/* BREADCRUMB */
+
+.jd-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+  font-size: 14px;
+  color: #8a8da3;
+}
+
+.jd-breadcrumb span:first-child {
+  color: #7055ee;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.jd-breadcrumb span:first-child:hover {
+  text-decoration: underline;
+}
+
+.jd-breadcrumb-arrow {
+  color: #b5b6c5;
+}
+
+/* MAIN CARD */
+
+.jd-card {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e9e9f3;
+  border-radius: 22px;
+  padding: 38px;
+  box-shadow: 0 8px 30px rgba(38, 38, 80, 0.05);
+}
+
+/* TOP SECTION */
+
+.jd-top-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  margin-bottom: 30px;
+}
+
+.jd-job-icon {
+  width: 65px;
+  height: 65px;
+  min-width: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #eee9ff, #e6edff);
+  border-radius: 18px;
+  font-size: 29px;
+}
+
+.jd-title-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.jd-open-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ecfdf3;
+  color: #16834a;
+  padding: 7px 13px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.jd-status-dot {
+  width: 8px;
+  height: 8px;
+  background: #22c55e;
+  border-radius: 50%;
+}
+
+
+.jd-heading {
+  font-size: 34px;
+  font-weight: 700;
+  color: #202447;
+  margin: 0 0 15px;
+  line-height: 1.3;
+}
+
+.jd-subtitle {
+  color: #777e96;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* QUICK INFO */
+
+.jd-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 30px 0;
+}
+
+.jd-info-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 22px;
+  background: #f8f7ff;
+  border: 1px solid #eeebff;
+  border-radius: 16px;
+  min-width: 0;
+}
+
+.jd-info-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eeebff;
+  border-radius: 13px;
+  font-size: 22px;
+}
+
+.jd-info-label {
+  display: block;
+  color: #777e96;
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+
+.jd-info-box h3 {
+  margin: 0;
+  color: #202447;
+  font-size: 16px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+/* SECTIONS */
+
+.jd-section {
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid #ededf5;
+}
+
+.jd-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.jd-heading-icon {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0edff;
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+.jd-section-heading h2 {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 750;
+  color: #202447;
+}
+
+/* DESCRIPTION */
+
+.jd-description {
+  color: #656b80;
+  font-size: 15px;
+  line-height: 1.9;
+  margin: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+/* SKILLS */
+
+.jd-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.jd-skill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #f0edff;
+  color: #6349e9;
+  border: 1px solid #e7e1ff;
+  padding: 10px 16px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.jd-skill-check {
+  color: #7055ee;
+  font-weight: 800;
+}
+
+.jd-no-skills {
+  color: #777e96;
+  font-size: 14px;
+}
+
+/* EXPERIENCE */
+
+.jd-experience-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 22px;
+  background: #f8f7ff;
+  border: 1px solid #eeebff;
+  border-radius: 16px;
+}
+
+.jd-experience-icon {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eeebff;
+  border-radius: 14px;
+  font-size: 23px;
+}
+
+.jd-experience-card h3 {
+  color: #202447;
+  margin: 0 0 7px;
+  font-size: 16px;
+}
+
+.jd-experience-card p {
+  margin: 0;
+  color: #777e96;
+  font-size: 13px;
+}
+
+/* APPLY SECTION */
+
+.jd-apply-section {
+  margin-top: 35px;
+  padding: 28px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #f1edff, #eef3ff);
+  border: 1px solid #e7e4ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.jd-apply-text {
+  min-width: 0;
+}
+
+.jd-apply-text h2 {
+  color: #202447;
+  font-size: 22px;
+  margin: 0 0 10px;
+}
+
+.jd-apply-text p {
+  color: #777e96;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.jd-apply-button {
+  background: linear-gradient(135deg, #7355ee, #5969ed);
+  color: #ffffff;
+  padding: 16px 25px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 750;
+  min-width: 220px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.jd-apply-button span {
+  margin-left: 8px;
+}
+
+.jd-apply-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(100, 80, 230, 0.2);
+}
+
+/* FOOTER */
+
+.jd-footer-note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 25px;
+  color: #888ca1;
+  font-size: 13px;
+}
+
+/* ERROR */
+
+.jd-error {
+  color: #e54848;
+  margin-top: 15px;
+}
+
+/* LOADING */
+
+.jd-loading {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: #777e96;
+}
+
+.jd-loading-spinner {
+  width: 42px;
+  height: 42px;
+  border: 4px solid #e8e4ff;
+  border-top-color: #7055ee;
+  border-radius: 50%;
+  animation: jd-spin 0.8s linear infinite;
+}
+
+@keyframes jd-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .jd-main {
+    padding: 28px 20px;
+  }
+
+  .jd-card {
+    padding: 28px;
+  }
+
+  .jd-info-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .jd-info-box:last-child {
+    grid-column: span 2;
+  }
+
+  .jd-apply-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .jd-apply-button {
+    width: 100%;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .jd-page {
+    padding-bottom: 20px;
+  }
+
+  .jd-navbar {
+    height: auto;
+    min-height: 72px;
+    padding: 15px 18px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .jd-logo {
+    font-size: 20px;
+  }
+
+  .jd-back-button {
+    padding: 10px 13px;
+    font-size: 13px;
+  }
+
+  .jd-main {
+    padding: 22px 14px;
+  }
+
+  .jd-breadcrumb {
+    margin-bottom: 16px;
+    font-size: 13px;
+  }
+
+  .jd-card {
+    padding: 22px 17px;
+    border-radius: 17px;
+  }
+
+  .jd-top-section {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .jd-job-icon {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    font-size: 25px;
+  }
+
+  .jd-heading {
+    font-size: 26px;
+  }
+
+  .jd-subtitle {
+    font-size: 14px;
+  }
+
+  .jd-info-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin: 24px 0;
+  }
+
+  .jd-info-box:last-child {
+    grid-column: auto;
+  }
+
+  .jd-info-box {
+    padding: 17px;
+  }
+
+  .jd-section {
+    margin-top: 25px;
+    padding-top: 22px;
+  }
+
+  .jd-section-heading h2 {
+    font-size: 18px;
+  }
+
+  .jd-description {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .jd-skills {
+    gap: 9px;
+  }
+
+  .jd-skill-tag {
+    padding: 9px 12px;
+    font-size: 13px;
+  }
+
+  .jd-experience-card {
+    padding: 17px;
+  }
+
+  .jd-apply-section {
+    padding: 22px 17px;
+    gap: 20px;
+  }
+
+  .jd-apply-text h2 {
+    font-size: 19px;
+  }
+
+  .jd-apply-button {
+    min-width: 0;
+    padding: 15px;
+  }
+
+  .jd-footer-note {
+    font-size: 12px;
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
+/* SMALL PHONES */
+
+@media (max-width: 350px) {
+  .jd-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .jd-navbar button {
+    width: 100%;
+  }
+
+  .jd-card {
+    padding: 18px 14px;
+  }
+
+  .jd-heading {
+    font-size: 23px;
+  }
+
+  .jd-info-box {
+    gap: 12px;
+  }
+}
