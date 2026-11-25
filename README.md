@@ -84,7 +84,7 @@ SmartRecruit AI is a full-stack recruitment platform designed to simplify and st
 
 ### 1. Clone the Repository
 
-    git clone YOUR_GITHUB_REPOSITORY_LINK
+git clone https://github.com/Subaraj15/SmartRecruit-AI.git
 
 ### 2. Backend Setup
 
