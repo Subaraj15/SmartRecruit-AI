@@ -33,9 +33,9 @@ export default function Login() {
       }
 
       const res = await axios.post(
-        `http://localhost:8080${endpoint}`,
-        { email, password }
-      );
+  `https://smartrecruit-ai-e8gk.onrender.com${endpoint}`,
+  { email, password }
+);
 
       const token = res.data?.token;
 

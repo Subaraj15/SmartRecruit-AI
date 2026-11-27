@@ -1,5 +1,5 @@
 
-        package com.ai.smartrecruit.Security;
+package com.ai.smartrecruit.Security;
 
 import com.ai.smartrecruit.Security.JwtService;
 import com.ai.smartrecruit.Service.CustomUserDetailsService;

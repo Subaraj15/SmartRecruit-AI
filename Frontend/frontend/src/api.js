@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://smartrecruit-ai-e8gk.onrender.com",
+ baseURL: "https://smartrecruit-ai-e8gk.onrender.com",
 });
 
 api.interceptors.request.use((config) => {
