@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+// import axios from "axios";
+import api from "../api";
 import "../CSS/RecruiterDashboard.css";
 
 export default function RecruiterDashboard() {
@@ -14,14 +15,16 @@ export default function RecruiterDashboard() {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await axios.get(
-        "http://localhost:8080/api/applications/recruiter/my-applications",
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      );
+      // const res = await axios.get(
+      //   "http://localhost:8080/api/applications/recruiter/my-applications",
+      //   {
+      //     headers: {
+      //       Authorization: `Bearer ${token}`,
+      //     },
+      //   }
+      // );
+
+      const res = await api.get("/api/applications/recruiter/my-applications");
 
       setApplications(Array.isArray(res.data) ? res.data : []);
       setError("");
